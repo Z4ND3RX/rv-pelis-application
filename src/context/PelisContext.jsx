@@ -34,7 +34,7 @@ export function PelisContextProvider(props) {
   };
 
   // filtrar peliculas
-  const searchMovies = () => {
+  const searchMovies = (e) => {
     e.preventDefault();
     fetchMovies(searchKey);
   };

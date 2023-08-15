@@ -7,7 +7,7 @@ function MovieList() {
   const { movies } = useContext(PelisContext);
   return (
     <>
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={2} justifyContent="center" marginTop={0.5}>
         {movies.map((movie) => (
           <ActionCard key={movie.id} movie={movie} />
         ))}
